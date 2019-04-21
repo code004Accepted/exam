@@ -2,28 +2,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>期中倒计时</title>
+    <title>期中考试倒计时</title>
     <script src="TimeDown.js"></script>
 </head>
 <body bgcolor="black">
     <center>
-    <font color="white" face="KaiTi" size=7>
-    <form id="form1" runat="server">
-        距离数学考试还有<br/>
+    <font color="white" face="KaiTi" size=6>
+        数学：
         <div id="show1">
         </div>
         <script type="text/javascript">
             TimeDown("show1", "2019-4-23 14:00:00");
         </script>
-    </form>
-    <form id="form1" runat="server">
-        距离政治/历史考试还有<br/>
+        政治：
         <div id="show2">
         </div>
         <script type="text/javascript">
             TimeDown("show2", "2019-4-23 16:20:00");
         </script>
-    </form>
+        语文：
+        <div id="show3">
+        </div>
+        <script type="text/javascript">
+            TimeDown("show3", "2019-4-24 08:00:00");
+        </script>
     </font>
     </center>
 </body>
