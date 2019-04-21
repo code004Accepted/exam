@@ -17,10 +17,13 @@ function TimeDown(id, endDateStr) {
     //秒
     var seconds = modulo % 60;
     //输出到页面
-    document.getElementById(id).innerHTML = days + "天 " + hours + "时 " + minutes + "分 " + seconds + "秒";
-    if(totalSeconds<=0)
+    if(days<0)
     {
         document.getElementById(id).innerHTML = "考试已开始";
+    }
+    else
+    {
+        document.getElementById(id).innerHTML = days + "天 " + hours + "时 " + minutes + "分 " + seconds + "秒";
     }
     //延迟一秒执行自己
     setTimeout(function () {
