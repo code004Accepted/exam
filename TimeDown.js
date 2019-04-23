@@ -17,6 +17,10 @@ function TimeDown(id, endDateStr) {
     //秒
     var seconds = modulo % 60;
     //输出到页面
+    if(totalSeconds<=-9000)
+    {
+        document.getElementById(id).innerHTML = "请等待官方答案公布";
+    }
     if(totalSeconds<=0)
     {
         document.getElementById(id).innerHTML = "考试已开始或已结束";
