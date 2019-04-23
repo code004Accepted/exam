@@ -21,7 +21,7 @@ function TimeDown(id, endDateStr) {
     {
         document.getElementById(id).innerHTML = "请等待官方答案公布";
     }
-    if(totalSeconds<=0)
+    else if(totalSeconds<=0)
     {
         document.getElementById(id).innerHTML = "考试已开始或已结束";
     }
