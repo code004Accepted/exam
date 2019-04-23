@@ -1,4 +1,4 @@
-function TimeDown(id, endDateStr) {
+function TimeDown(id, endDateStr, duration) {
     //结束时间
     var endDate = new Date(endDateStr);
     //当前时间
@@ -17,9 +17,13 @@ function TimeDown(id, endDateStr) {
     //秒
     var seconds = modulo % 60;
     //输出到页面
-    if(totalSeconds<=0)
+    if(totalSeconds<=0-duration)
     {
-        document.getElementById(id).innerHTML = "考试已开始或已结束";
+        document.getElementById(id).innerHTML = "考试已结束";
+    }
+    else if(totalSeconds<=0)
+    {
+        document.getElementById(id).innerHTML = "考试已开始";
     }
     else
     {
