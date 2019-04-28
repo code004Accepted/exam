@@ -19,7 +19,7 @@ function TimeDown(id, endDateStr) {
     //输出到页面
     if(totalSeconds<=-9000)
     {
-        document.getElementById(id).innerHTML = "答案在唐老师手上，抢！";
+        document.getElementById(id).innerHTML = "快抢唐老师手上的答案";
     }
     else if(totalSeconds<=0)
     {
