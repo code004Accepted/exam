@@ -17,13 +17,13 @@ function TimeDown(id, endDateStr) {
     //秒
     var seconds = modulo % 60;
     //输出到页面
-    if(totalSeconds<=-9000)
-    {
-        document.getElementById(id).innerHTML = "快抢唐老师手上的答案";
-    }
-    else if(totalSeconds<=0)
+    if(totalSeconds<=0)
     {
         document.getElementById(id).innerHTML = "考试已开始或已结束";
+    }
+    else if(totalSeconds<=3600)
+    {
+        document.getElementById(id).innerHTML = "考试将在1小时内开始";
     }
     else
     {
